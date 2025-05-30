@@ -6,6 +6,7 @@ from department import Department
 from employee import Employee
 from review import Review
 import ipdb
+from faker import Faker  # Import Faker
 
 
 def reset_database():
@@ -28,4 +29,9 @@ def reset_database():
 
 
 reset_database()
+
+# Test Faker functionality
+fake = Faker()
+print(fake.name())  # This will print a fake name
+
 ipdb.set_trace()
